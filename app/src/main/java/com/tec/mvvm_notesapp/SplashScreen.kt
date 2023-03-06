@@ -23,7 +23,8 @@ class SplashScreen : AppCompatActivity() {
             override fun onAnimationCancel(animation: Animator) {}
             override fun onAnimationRepeat(animation: Animator) {}
         })
-        animationView.playAnimation()**/
+        animationView.playAnimation()
+         this fixes time delay**/
 
         setContentView(R.layout.activity_splash_screen)
         this.supportActionBar?.hide()
