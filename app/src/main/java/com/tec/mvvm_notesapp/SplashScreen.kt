@@ -29,8 +29,7 @@ class SplashScreen : AppCompatActivity() {
         this.supportActionBar?.hide()
         // Hide the status bar.
         window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
-// Remember that you should never show the action bar if the
-// status bar is hidden, so hide that too if necessary.
+
         actionBar?.hide()
 
         val backgroundanimation: LottieAnimationView= findViewById(R.id.animation_view)
