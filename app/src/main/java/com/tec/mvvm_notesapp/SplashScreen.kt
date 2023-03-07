@@ -11,7 +11,7 @@ import com.airbnb.lottie.LottieAnimationView
 class SplashScreen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-       /** setContentView(R.layout.activity_splash_screen)
+        /**setContentView(R.layout.activity_splash_screen)
         val animationView = findViewById<LottieAnimationView>(R.id.animation_view)
         animationView.addAnimatorListener(object : Animator.AnimatorListener {
             override fun onAnimationStart(animation: Animator) {}
@@ -23,7 +23,7 @@ class SplashScreen : AppCompatActivity() {
             override fun onAnimationCancel(animation: Animator) {}
             override fun onAnimationRepeat(animation: Animator) {}
         })
-        animationView.playAnimation()**/
+        animationView.playAnimation()*/
 
         setContentView(R.layout.activity_splash_screen)
         this.supportActionBar?.hide()
@@ -39,8 +39,6 @@ class SplashScreen : AppCompatActivity() {
             startActivity(Intent(this,MainActivity::class.java))
             finish()
         },2702)
-
-
 
 
     }
