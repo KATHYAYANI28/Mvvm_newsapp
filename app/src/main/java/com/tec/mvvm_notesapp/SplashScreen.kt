@@ -11,7 +11,7 @@ import com.airbnb.lottie.LottieAnimationView
 class SplashScreen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        /**setContentView(R.layout.activity_splash_screen)
+       /** setContentView(R.layout.activity_splash_screen)
         val animationView = findViewById<LottieAnimationView>(R.id.animation_view)
         animationView.addAnimatorListener(object : Animator.AnimatorListener {
             override fun onAnimationStart(animation: Animator) {}
@@ -23,14 +23,14 @@ class SplashScreen : AppCompatActivity() {
             override fun onAnimationCancel(animation: Animator) {}
             override fun onAnimationRepeat(animation: Animator) {}
         })
-        animationView.playAnimation()
-         this fixes time delay**/
+        animationView.playAnimation()**/
 
         setContentView(R.layout.activity_splash_screen)
         this.supportActionBar?.hide()
         // Hide the status bar.
         window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
-
+// Remember that you should never show the action bar if the
+// status bar is hidden, so hide that too if necessary.
         actionBar?.hide()
 
         val backgroundanimation: LottieAnimationView= findViewById(R.id.animation_view)
@@ -38,7 +38,10 @@ class SplashScreen : AppCompatActivity() {
         Handler().postDelayed({
             startActivity(Intent(this,MainActivity::class.java))
             finish()
-        },2600)
+        },2700)
+
+
+
 
     }
 }

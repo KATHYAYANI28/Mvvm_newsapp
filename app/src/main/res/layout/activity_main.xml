@@ -26,6 +26,7 @@
         android:layout_height="53dp"
         android:layout_margin="5dp"
         android:iconifiedByDefault="false"
+
         android:queryHint="Search Notes"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
